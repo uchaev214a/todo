@@ -147,6 +147,7 @@ namespace todo.View
                 return;
             }
 
+
             LoadTasks();
 
             title_task_label.Text = "Выберите задачу";
