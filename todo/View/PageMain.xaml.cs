@@ -128,8 +128,9 @@ namespace todo.View
 
             title_task_label.Text = "Выберите задачу";
             time_task_label.Text = "";
-            description_task_label.Text = "";
             date_task_label.Text = "";
+            description_task_label.Text = "";
+
 
 
         }
