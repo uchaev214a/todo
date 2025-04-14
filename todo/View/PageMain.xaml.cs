@@ -132,7 +132,6 @@ namespace todo.View
             description_task_label.Text = "";
 
 
-
         }
 
         private void delete_btn_Click(object sender, RoutedEventArgs e)
