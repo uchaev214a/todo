@@ -68,6 +68,13 @@ namespace todo.View
             
         }
 
+
+
+        private void nameLabel_Initialized(object sender, EventArgs e)
+        {
+            string nameofUser = UserRepository.currentUser.Name;
+            nameLabel.Content = nameofUser;
+        }
         private void TaskControl_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             using (var context = new todoEntities())
@@ -87,12 +94,6 @@ namespace todo.View
                     }
                 }
             }
-        }
-
-        private void nameLabel_Initialized(object sender, EventArgs e)
-        {
-            string nameofUser = UserRepository.currentUser.Name;
-            nameLabel.Content = nameofUser;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
