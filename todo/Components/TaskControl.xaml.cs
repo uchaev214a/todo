@@ -12,27 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Xml.Linq;
-using todo.ApplicationData;
-using todo.Repository;
-using todo.View;
 
-namespace todo
+namespace todo.Components
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для TaskControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TaskControl : UserControl
     {
-        public MainWindow()
+        public TaskControl()
         {
             InitializeComponent();
-            AppConnect.todoModel = new todoEntities();
-            AppFrame.frameMain = FrmMain;
-            FrmMain.Navigate(new PageLogin());
-            
         }
-
-
     }
 }
